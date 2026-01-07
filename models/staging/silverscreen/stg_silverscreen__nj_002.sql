@@ -16,7 +16,5 @@ renamed as (
         'NJ_002' AS location_id
 
     from source
-
 )
-
-select * from renamed
+    select * from renamed

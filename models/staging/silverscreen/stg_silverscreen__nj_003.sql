@@ -14,10 +14,12 @@ renamed as (
         amount AS ticket_amount,
         total_value AS revenue,
         'NJ_003' AS location_id
-        
 
     from source
    WHERE product_type = 'ticket' 
+
+
+        
 
 )
 
