@@ -1,0 +1,11 @@
+sources:
+  - name: silverscreen
+    database: silverscreendb
+    schema: public
+
+    tables:
+      - name: invoices
+      - name: movie_catalog
+      - name: nj_001
+      - name: nj_002
+      - name: nj_003
