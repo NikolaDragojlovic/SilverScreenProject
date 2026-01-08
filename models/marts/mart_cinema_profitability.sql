@@ -1,9 +1,9 @@
 SELECT  m.movie_id,
+        m.month,
+        m.location_id,
         m.movie_title,
         m.genre,
         m.studio,
-        m.month,
-        m.location_id,
         m.rental_cost,
         l.ticket_amount AS tickets_sold,
         l.revenue
@@ -12,3 +12,4 @@ SELECT  m.movie_id,
     ON m.movie_id = l.movie_id
     AND m.location_id = l.location_id
     AND m.month = l.transaction_month
+    

@@ -8,7 +8,7 @@ source as (
 
 renamed as (
 
-    select
+   /* select
         movie_id,
         invoice_id,
         month,
@@ -16,9 +16,20 @@ renamed as (
         studio,
         release_date,
         weekly_price,
-        total_invoice_sum
+        total_invoice_sum*/
 
-    from source
+SELECT
+    movie_id,
+    location_id,
+    month,
+    MAX(total_invoice_sum) AS rental_cost,
+    COUNT(DISTINCT invoice_id) AS invoice_count
+FROM source
+GROUP BY
+    movie_id,
+    location_id,
+    month
+
 
 )
 
