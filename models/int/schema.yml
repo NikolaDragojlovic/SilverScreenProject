@@ -1,0 +1,73 @@
+version: 2
+
+models:
+  - name: int_movie_costs
+    description: >
+      Intermediate model that represents monthly movie rental costs
+      aggregated at movie and month grain.
+      Grain: 1 row per movie_id, location_id, month.
+  
+
+    columns:
+      - name: movie_id
+        description: Unique identifier of the movie.
+        tests:
+          - not_null
+
+      - name: location_id
+        description: Cinema location where the movie was screened.
+        tests:
+          - not_null
+
+      - name: month
+        description: Month of the rental cost (date truncated to month).
+        tests:
+          - not_null
+
+      - name: rental_cost
+        description: Total rental cost for the movie in the given month and location.
+        tests:
+          - not_null
+
+      - name: movie_title
+        description: Movie title.
+
+      - name: studio
+        description: Studio that produced the movie.
+
+      - name: genre
+        description: Movie genre.
+
+  - name: int_union_locations_revenue
+    description: >
+      Intermediate model that aggregates ticket sales and revenue
+      across all cinema locations.
+      Data is unioned and cleaned at the staging level and aggregated
+      to monthly revenue per movie and location.
+      Used as the revenue source for mart_cinema_profitability.
+
+    columns:
+      - name: movie_id
+        description: Unique identifier of the movie.
+        tests:
+          - not_null
+
+      - name: location_id
+        description: Cinema location where tickets were sold.
+        tests:
+          - not_null
+
+      - name: transaction_month
+        description: Month of the ticket transaction (date truncated to month).
+        tests:
+          - not_null
+
+      - name: ticket_amount
+        description: Number of tickets sold for the movie in the given month and location.
+        tests:
+          - not_null
+
+      - name: revenue
+        description: Ticket revenue for the movie in the given month and location.
+        tests:
+          - not_null

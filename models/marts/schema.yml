@@ -1,0 +1,56 @@
+version: 2
+
+models:
+  - name: mart_cinema_profitability
+    description: >
+      Final mart model that combines monthly movie rental costs
+      with ticket sales and revenue data.
+      The model provides a unified dataset for analyzing movie
+      performance and profitability by location and month.
+
+      This table is intended for direct consumption by BI tools
+      and analytical queries.
+
+      Grain: 1 row per movie_id, location_id, month.
+   
+          
+            
+    columns:
+      - name: movie_id
+        description: Unique identifier of the movie.
+        tests:
+          - not_null
+
+      - name: movie_title
+        description: Movie title used in reporting.
+
+      - name: genre
+        description: Movie genre used for filtering and aggregation.
+
+      - name: studio
+        description: Studio that produced or distributed the movie.
+
+      - name: month
+        description: Reporting month (date truncated to month).
+        tests:
+          - not_null
+
+      - name: location_id
+        description: Cinema location where the movie was screened.
+        tests:
+          - not_null
+
+      - name: rental_cost
+        description: Total rental cost for the movie in the given month and location.
+        tests:
+          - not_null
+
+      - name: tickets_sold
+        description: Total number of tickets sold for the movie in the given month and location.
+        tests:
+          - not_null
+
+      - name: revenue
+        description: Total ticket revenue for the movie in the given month and location.
+        tests:
+          - not_null
