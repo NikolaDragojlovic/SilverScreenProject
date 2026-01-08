@@ -1,9 +1,9 @@
-select
+select  -- Intermediate model that represents monthly movie rental costs aggregated at movie and month grain.
     i.movie_id,
     i.month,
     i.location_id,
     m.studio,
-    rental_cost,
+    i.rental_cost,
     m.movie_title,
     genre
 

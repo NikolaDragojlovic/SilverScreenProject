@@ -1,9 +1,9 @@
-SELECT  m.movie_id,
-        m.month,
-        m.location_id,
+SELECT  m.movie_id,             --This table is intended for direct consumption by BI tools and analytical queries.
         m.movie_title,
         m.genre,
         m.studio,
+        m.month,
+        m.location_id,
         m.rental_cost,
         l.ticket_amount AS tickets_sold,
         l.revenue

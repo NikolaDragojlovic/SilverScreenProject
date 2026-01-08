@@ -1,0 +1,118 @@
+version: 2
+
+models:
+  - name: stg_silverscreen_invoices
+    description: |
+      Invoice-level rental data by movie, location, and month.
+      Each record represents a single invoice enriched with studio and release date information.
+      A surrogate key is generated from movie, month, location, and release date.
+    columns:
+      - name: id
+        description: Surrogate key generated from movie_id, month, location_id, and release_date
+        tests:
+          - unique
+          - not_null
+
+      - name: movie_id
+        description: Movie ID
+      - name: invoice_id
+        description: Unique invoice identifier
+      - name: month
+        description: Invoice month (start of the month)
+      - name: location_id
+        description: Location ID (cinema)
+      - name: studio
+        description: Studio associated with the movie
+      - name: release_date
+        description: Release date of the movie
+      - name: weekly_price
+        description: Weekly rental price for the movie
+      - name: rental_cost
+        description: Total invoice amount for the rental
+
+  - name: stg_silverscreen_movie_catalog
+    description: |
+      Movie catalog with basic information including genre, country, studio, director, and duration.
+    columns:
+      - name: movie_id
+        description: Movie ID
+      - name: movie_title
+        description: Title of the movie
+      - name: release_date
+        description: Release date of the movie
+      - name: genre
+        description: Movie genre (if unknown, set as 'UNKNOWN')
+      - name: country
+        description: Country of production
+      - name: studio
+        description: Studio that produced the movie
+      - name: budget
+        description: Budget of the movie
+      - name: director
+        description: Director of the movie
+      - name: rating
+        description: Movie rating (e.g., PG, R)
+      - name: minutes
+        description: Duration of the movie in minutes
+
+  - name: stg_silverscreen_nj_001
+    description: |
+      Transaction data for location NJ_001, aggregated by month.
+    columns:
+      - name: transaction_month
+        description: Transaction month (start of the month)
+      - name: movie_id
+        description: Movie ID
+      - name: ticket_amount
+        description: Number of tickets sold
+      - name: revenue
+        description: Total revenue from transactions for the movie
+      - name: location_id
+        description: Location ID (always 'NJ_001')
+
+  - name: stg_silverscreen_nj_002
+    description: |
+      Transaction data for location NJ_002, aggregated by month.
+    columns:
+      - name: transaction_month
+        description: Transaction month (start of the month)
+      - name: movie_id
+        description: Movie ID
+      - name: ticket_amount
+        description: Number of tickets sold
+      - name: revenue
+        description: Total revenue from transactions for the movie
+      - name: location_id
+        description: Location ID (always 'NJ_002')
+
+  - name: stg_silverscreen_nj_003
+    description: |
+      Transaction data for location NJ_003, aggregated by month.
+    columns:
+      - name: transaction_month
+        description: Transaction month (start of the month)
+      - name: movie_id
+        description: Movie ID (taken from the 'details' field)
+      - name: ticket_amount
+        description: Number of tickets sold
+      - name: revenue
+        description: Total revenue from transactions for the movie
+      - name: location_id
+        description: Location ID (always 'NJ_003')
+
+  - name: stg_union_locations
+    description: |
+      Union of all locations NJ_001, NJ_002, and NJ_003 into a single model.
+      All data is standardized with columns: transaction_month, movie_id, ticket_amount, revenue, location_id.
+    columns:
+      - name: transaction_month
+        description: Transaction month (start of the month)
+      - name: movie_id
+        description: Movie ID
+      - name: ticket_amount
+        description: Number of tickets sold
+      - name: revenue
+        description: Total revenue from transactions
+      - name: location_id
+        description: Location ID
+   

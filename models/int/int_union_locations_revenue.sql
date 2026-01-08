@@ -1,4 +1,4 @@
-SELECT
+SELECT   --Intermediate model that aggregates ticket sales and revenue across all cinema locations.  
     movie_id,
     transaction_month,
     location_id,

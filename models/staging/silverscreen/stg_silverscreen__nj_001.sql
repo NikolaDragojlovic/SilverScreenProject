@@ -6,7 +6,7 @@ source as (
 
 ),
 
-renamed as (
+renamed as (     --Transaction data for location NJ_001, aggregated by month.
 
     select
         DATE_TRUNC(month,timestamp) :: DATE AS transaction_month,

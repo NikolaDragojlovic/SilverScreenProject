@@ -4,9 +4,9 @@ source as (
 
     select * from {{ source('silverscreen', 'nj_003') }}
 
-),
+),     
 
-renamed as (
+renamed as (   --Transaction data for location NJ_003, aggregated by month.
 
     select
         DATE_TRUNC(month,timestamp) AS transaction_month,
