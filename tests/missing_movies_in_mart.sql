@@ -1,4 +1,4 @@
-SELECT
+SELECT      --tests that all movies with rental costs exist in the final mart table
   c.movie_id,
   c.month
 FROM {{ ref('int_movie_costs') }} c
