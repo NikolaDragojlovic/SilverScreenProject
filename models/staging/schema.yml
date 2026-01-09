@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: stg_silverscreen_invoices
+  - name: stg_silverscreen__invoices
     description: |
       Invoice-level rental data by movie, location, and month.
       Each record represents a single invoice enriched with studio and release date information.
@@ -30,7 +30,7 @@ models:
       - name: rental_cost
         description: Total invoice amount for the rental
 
-  - name: stg_silverscreen_movie_catalog
+  - name: stg_silverscreen__movie_catalog
     description: |
       Movie catalog with basic information including genre, country, studio, director, and duration.
     columns:
@@ -55,7 +55,7 @@ models:
       - name: minutes
         description: Duration of the movie in minutes
 
-  - name: stg_silverscreen_nj_001
+  - name: stg_silverscreen__nj_001
     description: |
       Transaction data for location NJ_001, aggregated by month.
     columns:
@@ -70,7 +70,7 @@ models:
       - name: location_id
         description: Location ID (always 'NJ_001')
 
-  - name: stg_silverscreen_nj_002
+  - name: stg_silverscreen__nj_002
     description: |
       Transaction data for location NJ_002, aggregated by month.
     columns:
@@ -85,7 +85,7 @@ models:
       - name: location_id
         description: Location ID (always 'NJ_002')
 
-  - name: stg_silverscreen_nj_003
+  - name: stg_silverscreen__nj_003
     description: |
       Transaction data for location NJ_003, aggregated by month.
     columns:

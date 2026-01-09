@@ -1,4 +1,4 @@
-SELECT
+SELECT     -- tests that there are no duplicate records for the same movie, location, and month
   movie_id,
   location_id,
   month,

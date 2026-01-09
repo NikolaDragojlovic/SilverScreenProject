@@ -6,7 +6,6 @@ models:
       Intermediate model that represents monthly movie rental costs
       aggregated at movie and month grain.
       Grain: 1 row per movie_id, location_id, month.
-  
 
     columns:
       - name: movie_id
