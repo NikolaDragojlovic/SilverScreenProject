@@ -11,20 +11,15 @@ models:
 
       - name: movie_id
         description: Movie ID
-      - name: invoice_id
-        description: Unique invoice identifier
-      - name: month
-        description: Invoice month (start of the month)
       - name: location_id
         description: Location ID (cinema)
-      - name: studio
-        description: Studio associated with the movie
-      - name: release_date
-        description: Release date of the movie
-      - name: weekly_price
-        description: Weekly rental price for the movie
+      - name: month
+        description: Invoice month (start of the month)
       - name: rental_cost
         description: Total invoice amount for the rental
+      - name: invoice_count
+        description:  
+         Number of distinct invoices issued for a specific movie at a given location during a given month
 
   - name: stg_silverscreen__movie_catalog
     description: |
