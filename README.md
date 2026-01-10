@@ -1,6 +1,6 @@
 
 # Silver Screen Cinema Profitability Analysis
- Project Overview
+## Project Overview
 
 This project analyzes the financial performance of Silver Screen, a movie theater chain operating three locations in New Jersey (NJ_001, NJ_002, NJ_003).
 The goal is to understand the relationship between movie rental costs and revenue generated from ticket sales, and to evaluate the efficiency of each location.
