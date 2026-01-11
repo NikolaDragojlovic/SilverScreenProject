@@ -243,7 +243,7 @@ Revenue by location
 
 Performance by movie and genre
 
-📈 Key Insights (Summary)
+## 📈 Key Insights (Summary)
 
 Total rental costs exceed total revenue across most months
 
@@ -281,8 +281,9 @@ Results depend on the accuracy and completeness of provided source data
 
 
 ## 👤 Author Nikola Dragojlovic
-## Role: BI Analyst / Analytics Engineer
-## Project: Silver Screen – Movie Performance Analytics
+### Role: BI Analyst / Analytics Engineer
+### Project: Silver Screen – Movie Performance Analytics
+
 
 
 
