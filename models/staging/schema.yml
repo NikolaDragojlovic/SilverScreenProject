@@ -7,8 +7,6 @@ models:
       Each record represents a single invoice enriched with studio and release date information.
       A surrogate key is generated from movie, month, location, and release date.
     columns:
-      
-
       - name: movie_id
         description: Movie ID
       - name: location_id
@@ -23,7 +21,7 @@ models:
 
   - name: stg_silverscreen__movie_catalog
     description: |
-      Movie catalog with basic information including genre, country, studio, director, and duration.
+       Movie catalog with basic information including genre, country, studio, director, and duration.
     columns:
       - name: movie_id
         description: Movie ID
