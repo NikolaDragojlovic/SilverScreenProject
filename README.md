@@ -46,7 +46,7 @@ nj_003 – item-level purchases (tickets, snacks, drinks)
 | [.yml Files – Silverscreen](https://drive.google.com/drive/folders/1nib53LNo3RvrFCBhxi7dNfrWP8WKh7h2?usp=sharing) | Schema.yml files with documentation and tests |
 | [mart_cinema_profitability CSV](https://drive.google.com/file/d/1bf7AzpPrB7K3C-GA2zbqlGRgyJeHB8N7/view?usp=sharing) | Final mart output – cinema profitability data |
 | [Silverscreen Tableau Link](https://public.tableau.com/views/AnalyzingMovieProfitabilityAcrossSilverScreenTheaters/MovieProfitability?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link) | Link to the live Tableau Public dashboard |
-| [Final business report]([https://docs.google.com/document/d/1ZqM1jcxaJ02CwuSm0ip9-TW6bIhdRkIbeuvMGF67hUc/edit?usp=sharing]) | Final business report in PDF |
+| [Final business report](https://drive.google.com/file/d/1sWk3hTqnjI7GXOYezxmC4hF_NOJUpGKx/view?usp=sharing) | Final business report in PDF |
 
 
 ## 🏗️ Project Architecture (DAG)
@@ -285,6 +285,7 @@ Results depend on the accuracy and completeness of provided source data
 Nikola Dragojlovic
 Role: BI Analyst / Analytics Engineer
 Project: Silver Screen – Movie Performance Analytics
+
 
 
 
