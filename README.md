@@ -42,7 +42,7 @@ nj_003 – item-level purchases (tickets, snacks, drinks)
 | [Staging Models](https://docs.google.com/document/d/1vzh2F9S_LvORRBmFvQBxbLEx13vl2bWpIaoabxHqQ9k/edit?usp=sharing) | Folder with all staging models  |
 | [Intermediate Models](https://docs.google.com/document/d/1prC3StV87alHIqdPHOJ3LRfqn72Ynfdrjy78wA1ArhU/edit?usp=sharing) | Folder with all int models |
 | [Marts Models](https://docs.google.com/document/d/1BTo8glwSKJ0evGVkTD401lQ4LQRrvlDUlxMUNbQdT5A/edit?usp=sharing) | Folder with mart model |
-| [Tests & Macros](https://docs.google.com/document/d/1w_ZRm7wZB_5gKnelav4KghnJ20RMQxMxHrSOjk-umTE/edit?usp=sharing) | Folder with custom tests and macros |
+| [Tests & Macros](https://drive.google.com/drive/folders/19IUmR4LICj_p-1dJIDjyFyVD2gBgGzrW?usp=sharing) | Folder with custom tests and macros |
 | [.yml Files – Silverscreen](https://drive.google.com/drive/folders/1nib53LNo3RvrFCBhxi7dNfrWP8WKh7h2?usp=sharing) | Schema.yml files with documentation and tests |
 | [mart_cinema_profitability CSV](https://drive.google.com/file/d/1bf7AzpPrB7K3C-GA2zbqlGRgyJeHB8N7/view?usp=sharing) | Final mart output – cinema profitability data |
 | [Silverscreen Tableau Link](https://public.tableau.com/views/AnalyzingMovieProfitabilityAcrossSilverScreenTheaters/MovieProfitability?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link) | Link to the live Tableau Public dashboard |
@@ -285,6 +285,7 @@ Results depend on the accuracy and completeness of provided source data
 Nikola Dragojlovic
 Role: BI Analyst / Analytics Engineer
 Project: Silver Screen – Movie Performance Analytics
+
 
 
 
