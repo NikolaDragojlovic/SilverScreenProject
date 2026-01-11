@@ -47,7 +47,7 @@ nj_003 – item-level purchases (tickets, snacks, drinks)
 | [Tests & Macros](Tests%20%26%20Macro) | Folder with custom tests and macros |
 | [.yml Files – Silverscreen](.yml%20files%20Silverscreen) | Schema.yml files with documentation and tests |
 | [Silverscreen Tableau Link](Silverscreen%20Tableau%20Link) | Link to the live Tableau Public dashboard |
-| [Project Documentation](Project_Documentation.pdf) | Full project description, process, and insights (if uploaded as PDF) |
+| [Project Documentation]([Project_Documentation.pdf](https://docs.google.com/document/d/1ZqM1jcxaJ02CwuSm0ip9-TW6bIhdRkIbeuvMGF67hUc/edit?usp=sharing)) | Full project description, process, and insights (if uploaded as PDF) |
 
 ## 🏗️ Project Architecture (DAG)
 
@@ -285,5 +285,6 @@ Results depend on the accuracy and completeness of provided source data
 Nikola Dragojlovic
 Role: BI Analyst / Analytics Engineer
 Project: Silver Screen – Movie Performance Analytics
+
 
 
