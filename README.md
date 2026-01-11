@@ -39,7 +39,7 @@ Daily aggregated ticket sales data.
 
 nj_003
 Transaction-level data including multiple product types (tickets, snacks, drinks).
-Ticket sales are filtered using product_type = 'ticket', and movie_id is extracted from a semi-structured field.
+Ticket sales are filtered using product_type = 'ticket', and movie_id is extracted from a details column.
 
 ## Data Architecture & DAG
 
