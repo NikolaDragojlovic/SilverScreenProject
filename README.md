@@ -1,7 +1,7 @@
 # 🎬 Silver Screen Cinema Profitability Analysis
 ## 📌 Project Overview
 
-This dbt project was built to support business analysis for Silver Screen, a movie theater chain operating three locations in New Jersey (NJ_001, NJ_002, NJ_003), recently acquired by a major Entertainment Company.
+This dbt project was built to support business analysis for Silver Screen, a movie theater chain operating three locations in New Jersey (NJ_001, NJ_002, NJ_003), recently acquired by a major Entertainment Company,based on the logic that the rental cost is the price the distributor pays to the studio for the rights to screen a movie for a week or a month, as a fixed amount, independent of the number of screening locations. 
 
 The main goal of the project is to analyze the relationship between monthly movie rental costs and revenue generated from ticket sales, evaluate location efficiency, and deliver a clean, reliable analytics mart for BI reporting and decision-making.
 
@@ -280,11 +280,10 @@ Analysis focuses on ticket revenue only (excluding snacks/drinks from revenue me
 Results depend on the accuracy and completeness of provided source data
 
 
-👤 Author
+## 👤 Author Nikola Dragojlovic
+## Role: BI Analyst / Analytics Engineer
+## Project: Silver Screen – Movie Performance Analytics
 
-Nikola Dragojlovic
-Role: BI Analyst / Analytics Engineer
-Project: Silver Screen – Movie Performance Analytics
 
 
 
