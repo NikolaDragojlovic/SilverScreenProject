@@ -37,7 +37,7 @@ nj_003 – item-level purchases (tickets, snacks, drinks)
 
 | File / Link | Description |
 |-------------|-------------|
-| [Final business report]((https://docs.google.com/document/d/1ZqM1jcxaJ02CwuSm0ip9-TW6bIhdRkIbeuvMGF67hUc/edit?usp=sharing)) | This file – project overview, setup, and deliverables |
+| [Final business report](https://docs.google.com/document/d/1ZqM1jcxaJ02CwuSm0ip9-TW6bIhdRkIbeuvMGF67hUc/edit?usp=sharing) | This file – project overview, setup, and deliverables |
 | [Lineage Diagram](Lineage.png) | dbt lineage graph showing model dependencies |
 | [DAG Diagram](DAG.png) | Directed Acyclic Graph of the dbt project flow |
 | [mart_cinema_profitability CSV](models_marts_mart_cinema_profitability.csv) | Final mart output – cinema profitability data |
@@ -285,6 +285,7 @@ Results depend on the accuracy and completeness of provided source data
 Nikola Dragojlovic
 Role: BI Analyst / Analytics Engineer
 Project: Silver Screen – Movie Performance Analytics
+
 
 
 
