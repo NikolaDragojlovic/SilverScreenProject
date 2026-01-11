@@ -9,7 +9,9 @@ source as (
 renamed as (     --Transaction data for location NJ_001, aggregated by month.
 
     select
-        DATE_TRUNC(month,timestamp) :: DATE AS transaction_month,
+        {{ month_key('timestamp') }} as transaction_month,
+
+        --DATE_TRUNC(month,timestamp) :: DATE AS transaction_month,
         movie_id,
         ticket_amount,
         transaction_total AS revenue,

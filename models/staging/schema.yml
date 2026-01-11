@@ -7,8 +7,6 @@ models:
       Each record represents a single invoice enriched with studio and release date information.
       A surrogate key is generated from movie, month, location, and release date.
     columns:
-      
-
       - name: movie_id
         description: Movie ID
       - name: location_id

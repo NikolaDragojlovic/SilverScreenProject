@@ -1,0 +1,8 @@
+version: 2
+
+macros:
+  - name: month_key
+    description: >
+      Standardizes month-level aggregation by truncating a date or timestamp
+      to the first day of the month. Used across staging models to ensure
+      consistent grain and reliable joins.
