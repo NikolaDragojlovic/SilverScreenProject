@@ -281,7 +281,7 @@ Results depend on the accuracy and completeness of provided source data
 
 
 ## 👤 Author Nikola Dragojlovic
-### Role: BI Analyst / Analytics Engineer
+### Role: Data Analyst / Analytics Engineer
 ### Project: Silver Screen – Movie Performance Analytics
 
 

@@ -25,7 +25,7 @@ SELECT
     movie_id,
     location_id,
     month,
-    MAX(total_invoice_sum) AS rental_cost,
+    ANY_VALUE(total_invoice_sum) AS rental_cost,
     COUNT(DISTINCT invoice_id) AS invoice_count
 FROM source
 GROUP BY
